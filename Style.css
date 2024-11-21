@@ -1,28 +1,36 @@
 
 body {
     margin: 0;
-    background: #000000;
+    background-image: url(./img/background.png);
     display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #333;
 }
 
+p{
+    color: #ffffff;
+
+}
 .chat-container {
-    background: #000000;
+    background: #0000006a;
     width: 90%;
     max-width: 400px;
     height: 600px;
     border-radius: 10px;
-    box-shadow: 0 0px 14px 8px rgb(255, 255, 255);
+    box-shadow: 0 0px 10px 3px #ffffff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .chat-header {
-    background: #000000;
+    background: #0000006a;
+    box-shadow: 0px 4px 6px #fcfcfc;
     color: #00eeff;
     padding: 10px;
     text-align: center;
@@ -34,15 +42,15 @@ body {
     font-size: 1rem;
     color: #ffffff;
     background-color: #000000;
-    border: 2px solid #00fff7;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 60%;
     max-width: 300px;
     position: relative;
     cursor: pointer;
     transition: 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px #00ffff;
 }
 
 
@@ -53,17 +61,19 @@ body {
 }
 
 .choosp {
+    width: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3px 0;
+    margin-left: 35px;
+    margin-top: 15px;
 }
+
+
 
 .chat-messages {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    background: #000000;
+    background: #0000006a;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -79,13 +89,13 @@ body {
 }
 
 .chat-messages .message.received {
-    background: #ff9797;
+    background: #ffc6c6;
     color: #000000;
     align-self: flex-start;
 }
 
 .chat-messages .message.sent {
-    background: #fffd9f;
+    background: #fffebd;
     color: #000000;
     align-self: flex-end;
 }
@@ -103,7 +113,7 @@ body {
     display: flex;
     border-top: 1px solid #ddd;
     padding: 10px;
-    background: #000000;
+    background: #0000006a;
 }
 
 .chattext input {
